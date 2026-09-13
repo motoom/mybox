@@ -120,7 +120,7 @@ _MIST = object()
 
 
 def _meervoud(aantal, enkelvoud, meervoud):
-    """'1 veld' maar '2 velden' - in lesmateriaal valt dat anders op."""
+    """'1 veld' maar '2 velden' - anders leest de uitvoer houterig."""
     return f"{aantal} {enkelvoud if aantal == 1 else meervoud}"
 
 

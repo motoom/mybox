@@ -1,8 +1,9 @@
-# pythonbox
+# mybox
 
-Lesmateriaal over [python-box](https://github.com/cdgriffith/Box), en een
-herbruikbare `MyBox`-klasse die JSON-serialisatie meebrengt voor types die
-`json` zelf niet kent.
+Een herbruikbare `MyBox`-klasse bovenop
+[python-box](https://github.com/cdgriffith/Box), die JSON-serialisatie
+meebrengt voor types die `json` zelf niet kent. Bedoeld als bouwsteen om in
+eigen scripts te importeren.
 
 ## Het probleem
 
@@ -37,11 +38,11 @@ Ondersteund: `date`, `datetime`, `time`, `Decimal`, `bytes` en `bytearray`.
 
 | bestand | |
 |---|---|
-| `mybox.py` | `MyBox` en `MyBoxList` - de herbruikbare klassen |
-| `startpunt.py` | de les: attribuut-toegang, JSON, JSON Lines, Jinja2 |
-| `coderingen.py` | vergelijking van manieren om bytes in JSON te zetten |
+| `mybox.py` | `MyBox` en `MyBoxList` - dit is waar het om gaat |
 | `test_mybox.py` | 35 tests |
-| `startpunt-oud.py` | het oorspronkelijke startpunt van de oefening |
+| `startpunt.py` | voorbeelden: attribuut-toegang, JSON, JSON Lines, Jinja2 |
+| `coderingen.py` | vergelijking van manieren om bytes in JSON te zetten |
+| `startpunt-oud.py` | het bestand van voor MyBox, als vergelijking |
 
 ## Extra's
 

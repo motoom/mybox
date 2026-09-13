@@ -14,7 +14,7 @@ import base64
 import json
 import random
 
-# Twee testgevallen: de korte sleutel uit de les, en een grotere blob om de
+# Twee testgevallen: een korte sleutel, en een grotere blob om de
 # overhead zichtbaar te maken. Vaste seed, zodat iedereen dezelfde uitkomst
 # krijgt - met os.urandom() varieert de laatste kolom per run.
 XORKEY = b"\x3a\x91\x07\xff\x42\x00\xbe\x6d\x18\xc3"
