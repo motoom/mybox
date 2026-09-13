@@ -1,3 +1,19 @@
+Metadata-Version: 2.4
+Name: mybox
+Version: 0.1.0
+Summary: Herbruikbare MyBox-klasse bovenop python-box: date, time, Decimal en bytes door JSON heen, met behoud van type
+Author-email: Michiel Overtoom <motoom@xs4all.nl>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/motoom/mybox
+Keywords: box,json,serialization,datetime,decimal
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-box>=7
+Dynamic: license-file
+
 # mybox
 
 Een herbruikbare `MyBox`-klasse bovenop
@@ -43,7 +59,6 @@ Ondersteund: `date`, `datetime`, `time`, `Decimal`, `bytes` en `bytearray`.
 | `startpunt.py` | voorbeelden: attribuut-toegang, JSON, JSON Lines, Jinja2 |
 | `coderingen.py` | vergelijking van manieren om bytes in JSON te zetten |
 | `startpunt-oud.py` | het bestand van voor MyBox, als vergelijking |
-| `pyproject.toml` | pakketdefinitie, voor `pip install -e .` |
 
 ## Extra's
 
@@ -63,20 +78,6 @@ met een dict-methode zoals `items` - toont het de `[...]`-vorm met de reden.
 `MyBoxList` doet hetzelfde voor JSON waarvan het hoogste niveau een lijst is,
 inclusief JSON Lines (`multiline=True`).
 
-## Installeren
-
-Om `mybox` in je eigen scripts te kunnen importeren, waar je ook staat:
-
-```
-git clone https://github.com/motoom/mybox.git
-cd mybox
-pip install -e .
-```
-
-De `-e` maakt het een editable install: `mybox.py` blijft op zijn plek en
-wijzigingen werken meteen door in elk script dat het importeert. `python-box`
-wordt als afhankelijkheid meegeïnstalleerd.
-
 ## Draaien
 
 ```
@@ -84,8 +85,8 @@ python3 startpunt.py
 python3 -m unittest test_mybox -v
 ```
 
-Het Jinja2-voorbeeld in `startpunt.py` wordt overgeslagen als Jinja2 niet
-geïnstalleerd is; de rest draait zonder.
+Vereist `python-box`. Het Jinja2-voorbeeld in `startpunt.py` wordt
+overgeslagen als Jinja2 niet geïnstalleerd is.
 
 ## Licentie
 

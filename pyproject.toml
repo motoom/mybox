@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mybox"
+version = "0.1.0"
+description = "Herbruikbare MyBox-klasse bovenop python-box: date, time, Decimal en bytes door JSON heen, met behoud van type"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Michiel Overtoom", email = "motoom@xs4all.nl"}]
+keywords = ["box", "json", "serialization", "datetime", "decimal"]
+dependencies = ["python-box>=7"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/motoom/mybox"
+
+[tool.setuptools]
+# Expliciet, anders probeert setuptools in deze platte indeling ook
+# startpunt.py, coderingen.py en test_mybox.py als modules mee te pakken.
+py-modules = ["mybox"]

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+mybox.py
+pyproject.toml
+mybox.egg-info/PKG-INFO
+mybox.egg-info/SOURCES.txt
+mybox.egg-info/dependency_links.txt
+mybox.egg-info/requires.txt
+mybox.egg-info/top_level.txt
