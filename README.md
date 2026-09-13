@@ -70,3 +70,7 @@ python3 -m unittest test_mybox -v
 
 Vereist `python-box`. Het Jinja2-voorbeeld in `startpunt.py` wordt
 overgeslagen als Jinja2 niet geïnstalleerd is.
+
+## Licentie
+
+MIT, zie [LICENSE](LICENSE).
