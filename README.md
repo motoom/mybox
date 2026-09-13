@@ -65,7 +65,20 @@ inclusief JSON Lines (`multiline=True`).
 
 ## Installeren
 
-Om `mybox` in je eigen scripts te kunnen importeren, waar je ook staat:
+Als afhankelijkheid in een ander project, rechtstreeks vanaf GitHub:
+
+```
+pip install git+https://github.com/motoom/mybox.git
+```
+
+Werkt ook in een `requirements.txt`. Zet er een tag of commit-hash achter
+voor een installatie die niet meeverandert als `mybox.py` later wijzigt:
+
+```
+pip install git+https://github.com/motoom/mybox.git@v0.1.0
+```
+
+Om `mybox.py` zelf te bewerken, clone je de repo en installeer je editable:
 
 ```
 git clone https://github.com/motoom/mybox.git
@@ -73,9 +86,9 @@ cd mybox
 pip install -e .
 ```
 
-De `-e` maakt het een editable install: `mybox.py` blijft op zijn plek en
-wijzigingen werken meteen door in elk script dat het importeert. `python-box`
-wordt als afhankelijkheid meegeïnstalleerd.
+De `-e` houdt `mybox.py` op zijn plek, zodat wijzigingen meteen doorwerken in
+elk script dat het importeert. `python-box` wordt in beide gevallen als
+afhankelijkheid meegeïnstalleerd.
 
 ## Draaien
 
